@@ -64,6 +64,9 @@ INSERT INTO movies (title, year, show_time) VALUES ('Captain Marvel', 2019, '00:
 UPDATE movies SET show_time = '17:20' WHERE id = 16;
 
 DELETE FROM people WHERE name = 'Ally McGilloway' OR name = 'David McAllister';
+DELETE FROM people WHERE name LIKE ('Da%');
+
+SELECT * FROM people;
 
 -- HOMEWORK ANSWERS
 --  1 SELECT * FROM movies;
